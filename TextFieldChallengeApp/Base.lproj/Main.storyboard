@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="TextFieldChallengeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="$0.00" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="707-23-Yix">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="kRl-p9-KaH">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="left" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5pH-lE-CDr">
+                                <rect key="frame" x="-25" y="-15" width="51" height="31"/>
+                                <connections>
+                                    <action selector="toggleSwitch:" destination="vXZ-lx-hvc" eventType="valueChanged" id="EtS-vv-Wjc"/>
+                                </connections>
+                            </switch>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xmk-J8-ifs">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" red="0.80000001190000003" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="61" y="257" width="46" height="30"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IVi-Dh-2BB">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="159" y="257" width="46" height="30"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9uQ-IA-dzm">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="239" y="257" width="46" height="30"/>
+                                </variation>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type your zip code" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="BNo-wd-TtG">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.40000000596046448" green="0.80000001192092896" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="707-23-Yix" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="6Sd-dH-ff1"/>
+                            <constraint firstAttribute="centerX" secondItem="BNo-wd-TtG" secondAttribute="centerX" id="F14-A9-GeV"/>
+                            <constraint firstItem="707-23-Yix" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="Hrr-gg-6Cg"/>
+                            <constraint firstItem="kRl-p9-KaH" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="LEq-qa-jMd"/>
+                            <constraint firstItem="BNo-wd-TtG" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="NEV-DN-GTY"/>
+                            <constraint firstItem="kRl-p9-KaH" firstAttribute="top" secondItem="707-23-Yix" secondAttribute="bottom" constant="14" id="WMR-iU-gSv"/>
+                            <constraint firstItem="707-23-Yix" firstAttribute="top" secondItem="BNo-wd-TtG" secondAttribute="bottom" constant="15" id="YJo-ax-nWF"/>
+                            <constraint firstItem="5pH-lE-CDr" firstAttribute="leading" secondItem="kRl-p9-KaH" secondAttribute="trailing" constant="8" id="fOI-r3-A1e"/>
+                            <constraint firstItem="BNo-wd-TtG" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="kgr-og-kfy"/>
+                            <constraint firstItem="5pH-lE-CDr" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="ord-Bx-l5h"/>
+                            <constraint firstItem="5pH-lE-CDr" firstAttribute="top" secondItem="707-23-Yix" secondAttribute="bottom" constant="13" id="qTz-2N-Ufu"/>
+                            <constraint firstAttribute="centerX" secondItem="707-23-Yix" secondAttribute="centerX" id="rRq-5V-iak"/>
+                            <constraint firstItem="BNo-wd-TtG" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="16" id="tOA-an-TW6"/>
+                            <constraint firstItem="kRl-p9-KaH" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="vqG-dR-z7g"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="707-23-Yix"/>
+                                <exclude reference="kRl-p9-KaH"/>
+                                <exclude reference="5pH-lE-CDr"/>
+                                <exclude reference="xmk-J8-ifs"/>
+                                <exclude reference="IVi-Dh-2BB"/>
+                                <exclude reference="9uQ-IA-dzm"/>
+                                <exclude reference="BNo-wd-TtG"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="6Sd-dH-ff1"/>
+                                <exclude reference="Hrr-gg-6Cg"/>
+                                <exclude reference="YJo-ax-nWF"/>
+                                <exclude reference="rRq-5V-iak"/>
+                                <exclude reference="F14-A9-GeV"/>
+                                <exclude reference="NEV-DN-GTY"/>
+                                <exclude reference="kgr-og-kfy"/>
+                                <exclude reference="tOA-an-TW6"/>
+                                <exclude reference="LEq-qa-jMd"/>
+                                <exclude reference="WMR-iU-gSv"/>
+                                <exclude reference="vqG-dR-z7g"/>
+                                <exclude reference="fOI-r3-A1e"/>
+                                <exclude reference="ord-Bx-l5h"/>
+                                <exclude reference="qTz-2N-Ufu"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="707-23-Yix"/>
+                                <include reference="kRl-p9-KaH"/>
+                                <include reference="5pH-lE-CDr"/>
+                                <include reference="xmk-J8-ifs"/>
+                                <include reference="IVi-Dh-2BB"/>
+                                <include reference="9uQ-IA-dzm"/>
+                                <include reference="BNo-wd-TtG"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="6Sd-dH-ff1"/>
+                                <include reference="Hrr-gg-6Cg"/>
+                                <include reference="YJo-ax-nWF"/>
+                                <include reference="rRq-5V-iak"/>
+                                <include reference="F14-A9-GeV"/>
+                                <include reference="NEV-DN-GTY"/>
+                                <include reference="kgr-og-kfy"/>
+                                <include reference="tOA-an-TW6"/>
+                                <include reference="LEq-qa-jMd"/>
+                                <include reference="WMR-iU-gSv"/>
+                                <include reference="vqG-dR-z7g"/>
+                                <include reference="fOI-r3-A1e"/>
+                                <include reference="ord-Bx-l5h"/>
+                                <include reference="qTz-2N-Ufu"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="textFieldDollarAmount" destination="707-23-Yix" id="wYU-2Z-6Iz"/>
+                        <outlet property="textFieldFreeResponse" destination="kRl-p9-KaH" id="iaH-QN-2vJ"/>
+                        <outlet property="textFieldZipCode" destination="BNo-wd-TtG" id="ZNm-h1-iVP"/>
+                        <outlet property="toggleSwitch" destination="5pH-lE-CDr" id="chQ-Jq-LsW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="310.5" y="402"/>
+        </scene>
+    </scenes>
+</document>
